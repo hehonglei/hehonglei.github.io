@@ -22,7 +22,7 @@ categories: jekyll update
 https://rubygems.org/pages/download
 
 下载完到本地之后用终端输入
-'ruby setup.rb'
+{(ruby setup.rb)}
 那么到现在RubyGems就安装成功啦
 
 4. 接下来我们在安装jekyll
