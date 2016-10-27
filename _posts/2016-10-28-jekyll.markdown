@@ -29,13 +29,19 @@ ruby setup.rb
 
 4. 接下来我们在安装jekyll
 打开终端 输入
-'gem install jekyll'
+{% highlight ruby %}
+gem install jekyll
+{% endhighlight %}
 检查一下是否安装成功。
-'jekyll -v'
+{% highlight ruby %}
+jekyll -v
+{% endhighlight %}
 成功的话就会显示jekyll版本号。
 
 5. 目前为止，我们已经安装完ruby RubyGems jekyll ，接下来要可以新建一个本地博客啦！！！
-'jekyll new myblog '
+{% highlight ruby %}
+jekyll new myblog
+{% endhighlight %}
 输入该命令之后，你的文件夹里面就会生成一个叫myblog的文件夹。myblog可以随便换成你喜欢的名字，比如你想建一个新的博客叫Winter，那你就输入 kekyll new Winter ，以此类推。
 进入myblog文件夹 cd myblog
 里面就会有这些文件。
@@ -43,7 +49,9 @@ ruby setup.rb
 在_posts文件夹里写你的博客，命名规范必须和里面自带的一致 比如：2016-10-27-XXXXX.markdown
 
 打开命令框输入
-'jekyll serve'
+{% highlight ruby %}
+jekyll serve
+{% endhighlight %}
 然后系统会告诉你本地网站已经搭建好了，在浏览器里面输入localhost:4000就能看到你刚刚建立好的最基本jekyll网站啦！
 
 *注意！在本地测试时jekyll serve 命令框不能关闭！！！
