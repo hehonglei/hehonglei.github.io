@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title> - Naringu</title>
+<<<<<<< HEAD
+		<description>Posts categorized as 'naringu'</description>
+=======
+		<description>Posts categorized as 'Naringu'</description>
+>>>>>>> master
+		<link>http://127.0.0.1</link>
+        <atom:link href="http://127.0.0.1feed.category.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>jeykll + github 发博客!</title>
+				
+					<description>&lt;ol&gt;
+  &lt;li&gt;首先你要在github上创建一个版本库
+名字必须和版本库的名字相同&lt;/li&gt;
+  &lt;li&gt;接下来安装ruby
+&lt;a href=&quot;http://rubyinstaller.org/&quot;&gt;http://rubyinstaller.org/&lt;/a&gt;
+下载完之后要配置环境变量&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+				
+				<pubDate>Sat, 21 Feb 2015 00:00:00 +0800</pubDate>
+				<link>http://127.0.0.1/naringu/2015/02/21/hahah/</link>
+				<guid isPermaLink="true">http://127.0.0.1/naringu/2015/02/21/hahah/</guid>
+			</item>
+		
+	</channel>
+</rss>
+
