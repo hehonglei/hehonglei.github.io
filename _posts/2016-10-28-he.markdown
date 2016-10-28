@@ -1,7 +1,0 @@
----
-layout: post
-title:  "我的博客!"
-date:   2016-10-27 20:42:44 +0800
-categories: jekyll update
----
-这里是我的博客，，，恩 对 是我的博客！
