@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>可了头i的博客</title>
+ <link href="http://127.0.0.1/atom.xml" rel="self"/>
+ <link href="http://127.0.0.1/"/>
+ <updated>2016-10-28T10:31:17+08:00</updated>
+ <id>http://127.0.0.1</id>
+ <author>
+   <name>Rizky Ariestiyansyah</name>
+   <email>ariestiyansyah.rizky@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>jeykll + github 发博客!</title>
+   <link href="http://127.0.0.1/naringu/2015/02/21/hahah/"/>
+   <updated>2015-02-21T00:00:00+08:00</updated>
+   <id>http://127.0.0.1/naringu/2015/02/21/hahah</id>
+   <content type="html">&lt;ol&gt;
+  &lt;li&gt;首先你要在github上创建一个版本库
+名字必须和版本库的名字相同&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;接下来安装ruby
+&lt;a href=&quot;http://rubyinstaller.org/&quot;&gt;http://rubyinstaller.org/&lt;/a&gt;
+下载完之后要配置环境变量&lt;/p&gt;
+
+    &lt;p&gt;在windows中配置环境变量&lt;/p&gt;
+
+    &lt;p&gt;RUBY_HOME=rubyinstaller_dir （实际的ruby所在路径）&lt;/p&gt;
+
+    &lt;p&gt;在path中添加 %RUBY_HOME%\bin
+在命令行下运行 ruby –version，如果显示ruby版本信息说明安装正常。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;接下来我们在安装RubyGems&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;https://rubygems.org/pages/download&lt;/p&gt;
+
+&lt;p&gt;下载完到本地之后用终端输入&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rb&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;那么到现在RubyGems就安装成功啦&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;接下来我们在安装jekyll
+打开终端 输入&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;检查一下是否安装成功。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;成功的话就会显示jekyll版本号。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;目前为止，我们已经安装完ruby RubyGems jekyll ，接下来要可以新建一个本地博客啦！！！&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myblog&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;输入该命令之后，你的文件夹里面就会生成一个叫myblog的文件夹。myblog可以随便换成你喜欢的名字，比如你想建一个新的博客叫Winter，那你就输入 kekyll new Winter ，以此类推。
+进入myblog文件夹 cd myblog
+里面就会有这些文件。&lt;/p&gt;
+
+&lt;p&gt;在_posts文件夹里写你的博客，命名规范必须和里面自带的一致 比如：2016-10-27-XXXXX.markdown&lt;/p&gt;
+
+&lt;p&gt;打开命令框输入&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;然后系统会告诉你本地网站已经搭建好了，在浏览器里面输入localhost:4000就能看到你刚刚建立好的最基本jekyll网站啦！&lt;/p&gt;
+
+&lt;p&gt;*注意！在本地测试时jekyll serve 命令框不能关闭！！！&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;把本地文件推送到之前创建好的github中，怎么推送就不细说了，推送成功之后在浏览器里面输入XXXX.github.io 你写的博客就会显示出来！
+每次在本地_posts中写完之后都得推送到github版本库中。。。。。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;至此！你的ZB博客就出来了。&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
