@@ -11,7 +11,7 @@
 
   <title>
     
-      jeykll + github 发博客! &middot; 可了头i的博客
+      php第一月总结! &middot; 可了头i的博客
     
   </title>
 
@@ -116,73 +116,56 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">jeykll + github 发博客!</h1>
+  <h1 class="post-title">php第一月总结!</h1>
   <span class="post-date">21 Feb 2015</span>
-  <ol>
-  <li>首先你要在github上创建一个版本库
-名字必须和版本库的名字相同</li>
-  <li>
-    <p>接下来安装ruby
-<a href="http://rubyinstaller.org/">http://rubyinstaller.org/</a>
-下载完之后要配置环境变量</p>
+  <p>1.session
+运用session时，首先要Session_Start();开启session
+存session：$_SESSION[“name”]=”value”;
+取session：echo $_SESSION[“name”];
+销毁session：session_destroy();</p>
 
-    <p>在windows中配置环境变量</p>
+<p>2.cookie
+setcookie(“UserName”,”zs”,time()+2<em>7</em>24*3600);
+第一个参数为键名，第二个参数为值，第三个参数为过期时间
+去cookie值：$_COOKIE[‘UserName’];
+删除一个cookie：setcookie(‘UserName’, NULL);</p>
 
-    <p>RUBY_HOME=rubyinstaller_dir （实际的ruby所在路径）</p>
+<p>3.pdo
+使用pdo时要开启pdo扩展。
+什么是pdo？
+PDO：PHP data object，php数据对象，也叫php数据抽象层，是一种能够管理多种不同数据库的数据对
+象，PHP只需要去调用PDO，而不用去在意PDO底层管理的数据库到底是采用什么样的方式，哪些方法来实
+现的功能。让PHP操作数据库变得简单。
+使用：$pdo=new PDO(‘mysql:host=127.0.0.1;dbname=hehe’,’root’,’root’);
+三个参数
+	$dsn：数据库类型:host=主机地址;port=端口号;dbname=数据库
+	$user：用户名
+	$pass：密码
+必须区分SQL语句到底是什么操作：写操作使用exec，读操作使用query
+例如：$pdo-&gt;query(‘select * from login’)-&gt;fetchAll(PDO::FETCH_ASSOC)；
+      $pdo-&gt;exec(‘delete from login’);</p>
 
-    <p>在path中添加 %RUBY_HOME%\bin
-在命令行下运行 ruby –version，如果显示ruby版本信息说明安装正常。</p>
-  </li>
-  <li>接下来我们在安装RubyGems</li>
-</ol>
+<p>4.mysqli	
+$mysqli = mysqli_connect($cfg_dbhost,$cfg_dbuser,$cfg_dbpwd,$cfg_dbname);
+四个参数
+	$cfg_dbhost：127.0.0.1
+	$cfg_dbuser：用户名
+	$cfg_dbpwd：密码
+	$cfg_dbname: 数据库
+mysqli_query($mysqli,”set names utf8”);
+例如：$sql = “select * from test”;
+ $res = mysqli_query($mysqli,$sql);
+$row=mysqli_fetch_array($res);
+print_r($row);  	//这会是一个二维数组</p>
 
-<p>https://rubygems.org/pages/download</p>
+<p>5.搜索高量显示
+搜索一个关键字，并且把关键字标红
+例如：</p>
 
-<p>下载完到本地之后用终端输入</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vg">$arr</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"blue,red,green,yellow"</span><span class="p">);</span>
+<span class="n">print_r</span><span class="p">(</span><span class="n">str_replace</span><span class="p">(</span><span class="s2">"red"</span><span class="p">,</span><span class="s2">"&lt;font color='red'&gt;red&lt;/font&gt;"</span><span class="p">,</span><span class="vg">$arr</span><span class="p">));</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">ruby</span> <span class="n">setup</span><span class="p">.</span><span class="nf">rb</span></code></pre></figure>
-
-<p>那么到现在RubyGems就安装成功啦</p>
-
-<ol>
-  <li>接下来我们在安装jekyll
-打开终端 输入</li>
-</ol>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span></code></pre></figure>
-
-<p>检查一下是否安装成功。</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
-
-<p>成功的话就会显示jekyll版本号。</p>
-
-<ol>
-  <li>目前为止，我们已经安装完ruby RubyGems jekyll ，接下来要可以新建一个本地博客啦！！！</li>
-</ol>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="kp">new</span> <span class="n">myblog</span></code></pre></figure>
-
-<p>输入该命令之后，你的文件夹里面就会生成一个叫myblog的文件夹。myblog可以随便换成你喜欢的名字，比如你想建一个新的博客叫Winter，那你就输入 kekyll new Winter ，以此类推。
-进入myblog文件夹 cd myblog
-里面就会有这些文件。</p>
-
-<p>在_posts文件夹里写你的博客，命名规范必须和里面自带的一致 比如：2016-10-27-XXXXX.markdown</p>
-
-<p>打开命令框输入</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
-
-<p>然后系统会告诉你本地网站已经搭建好了，在浏览器里面输入localhost:4000就能看到你刚刚建立好的最基本jekyll网站啦！</p>
-
-<p>*注意！在本地测试时jekyll serve 命令框不能关闭！！！</p>
-
-<ol>
-  <li>把本地文件推送到之前创建好的github中，怎么推送就不细说了，推送成功之后在浏览器里面输入XXXX.github.io 你写的博客就会显示出来！
-每次在本地_posts中写完之后都得推送到github版本库中。。。。。</li>
-</ol>
-
-<p>至此！你的ZB博客就出来了。</p>
+<p>结果为red是高亮显示</p>
 
 </div>
 
@@ -201,8 +184,8 @@
     
       <li>
         <h3>
-          <a href="/naringu/2015/02/21/one/">
-            php第一月总结!
+          <a href="/naringu/2015/02/21/hahah/">
+            jeykll + github 发博客!
             <small>21 Feb 2015</small>
           </a>
         </h3>

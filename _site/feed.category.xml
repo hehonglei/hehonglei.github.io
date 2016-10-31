@@ -11,6 +11,35 @@
         <atom:link href="http://127.0.0.1feed.category.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>javascript!</title>
+				
+					<description>&lt;p&gt;1.什么是javascript？它的特点是什么？它的作用是什么？
+定义：javascript是一门客户端的脚本语言，可以嵌套到html里面，浏览器能直接解析。&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 21 Feb 2015 00:00:00 +0800</pubDate>
+				<link>http://127.0.0.1/naringu/2015/02/21/two/</link>
+				<guid isPermaLink="true">http://127.0.0.1/naringu/2015/02/21/two/</guid>
+			</item>
+		
+			<item>
+				<title>php第一月总结!</title>
+				
+					<description>&lt;p&gt;1.session
+运用session时，首先要Session_Start();开启session
+存session：$_SESSION[“name”]=”value”;
+取session：echo $_SESSION[“name”];
+销毁session：session_destroy();&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 21 Feb 2015 00:00:00 +0800</pubDate>
+				<link>http://127.0.0.1/naringu/2015/02/21/one/</link>
+				<guid isPermaLink="true">http://127.0.0.1/naringu/2015/02/21/one/</guid>
+			</item>
+		
+			<item>
 				<title>jeykll + github 发博客!</title>
 				
 					<description>&lt;ol&gt;

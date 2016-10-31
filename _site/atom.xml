@@ -4,13 +4,288 @@
  <title>可了头i的博客</title>
  <link href="http://127.0.0.1/atom.xml" rel="self"/>
  <link href="http://127.0.0.1/"/>
- <updated>2016-10-28T10:31:17+08:00</updated>
+ <updated>2016-10-31T21:08:05+08:00</updated>
  <id>http://127.0.0.1</id>
  <author>
    <name>Rizky Ariestiyansyah</name>
    <email>ariestiyansyah.rizky@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>javascript!</title>
+   <link href="http://127.0.0.1/naringu/2015/02/21/two/"/>
+   <updated>2015-02-21T00:00:00+08:00</updated>
+   <id>http://127.0.0.1/naringu/2015/02/21/two</id>
+   <content type="html">&lt;p&gt;1.什么是javascript？它的特点是什么？它的作用是什么？
+定义：javascript是一门客户端的脚本语言，可以嵌套到html里面，浏览器能直接解析。&lt;/p&gt;
+
+&lt;p&gt;特点：&lt;/p&gt;
+
+&lt;p&gt;1)javaScript是一种基于对象和事件驱动并具有安全性能的脚本语言   基于对象和事件驱动并具有安全性能的脚本语言。&lt;/p&gt;
+
+&lt;p&gt;2)js代码自上而下执行，和php代码执行顺序一致。&lt;/p&gt;
+
+&lt;p&gt;3)js中的代码严格区分大小写。&lt;/p&gt;
+
+&lt;p&gt;4)每行结尾的分号可有可无。&lt;/p&gt;
+
+&lt;p&gt;作用：制作网页特效、实现表单验证、增加浏览器与用户交互的动态效果&lt;/p&gt;
+
+&lt;p&gt;2.javascript中的事件的分类
+鼠标事件
+1)onclick(鼠标点击事件)
+2)onmouseover(属性在鼠标指针移动到元素上时触发)
+3)onmouseout(属性在鼠标指针移动到元素外时触发)
+4)onmousemove(属性在鼠标指针移动到元素上时触发)
+键盘事件
+1)onkeydown(事件会在用户按下一个键盘按键时发生)&lt;/p&gt;
+
+&lt;p&gt;2)onkeyup(事件会在键盘按键被松开时发生)&lt;/p&gt;
+
+&lt;p&gt;表单事件&lt;/p&gt;
+
+&lt;p&gt;1)onblur(失去焦点时间)&lt;/p&gt;
+
+&lt;p&gt;2)onsubmit(事件会在表单中的确认按钮被点击时发生)&lt;/p&gt;
+
+&lt;p&gt;3)onchange(事件会在域的内容改变时发生)&lt;/p&gt;
+
+&lt;p&gt;Window.onload(页面加载事件)&lt;/p&gt;
+
+&lt;p&gt;3.DOM编程的基本找对象方法&lt;/p&gt;
+
+&lt;p&gt;1）通过id找对象：document.getElementById(“元素id”)&lt;/p&gt;
+
+&lt;p&gt;2）通过name找对象：document.getElementsByName(“元素name”)&lt;/p&gt;
+
+&lt;p&gt;3）通过标签找对象：document.getElementsByTagName(“标签名”)&lt;/p&gt;
+
+&lt;p&gt;4.DOM的基本属性&lt;/p&gt;
+
+&lt;p&gt;1）innerHTML属性：找到或设置双标签间的值&lt;/p&gt;
+
+&lt;p&gt;2）value属性：找到或设置表单中带有value属性的值&lt;/p&gt;
+
+&lt;p&gt;3）innerText属性：找到或设置双标签间的值&lt;/p&gt;
+
+&lt;p&gt;注解：&lt;/p&gt;
+
+&lt;p&gt;nnerText和innerHTML的区别：在获取双标签间的值得时候，innerText是剥除html标签，只有文本内容，而innerHTML是带有html标签的。&lt;/p&gt;
+
+&lt;p&gt;5.正则表达式的匹配符&lt;/p&gt;
+
+&lt;p&gt;模式匹配符：&lt;/p&gt;
+
+&lt;p&gt;\：转义字符  例如：\b转义了b&lt;/p&gt;
+
+&lt;p&gt;^：正则表达式开始符号&lt;/p&gt;
+
+&lt;p&gt;$：正则表达式结束符号&lt;/p&gt;
+
+&lt;p&gt;*：匹配前面的字符出现0次或者n次&lt;/p&gt;
+
+&lt;p&gt;+：匹配前面的字符出现1次或者n次&lt;/p&gt;
+
+&lt;p&gt;?：匹配前面的字符出现0次或者1次&lt;/p&gt;
+
+&lt;p&gt;.：匹配除了换行符以外的所有单个字符&lt;/p&gt;
+
+&lt;p&gt;{n}：匹配前面的n个字符&lt;/p&gt;
+
+&lt;p&gt;{n,m}：匹配至少n个最多m个前面字符&lt;/p&gt;
+
+&lt;p&gt;[xyz]：匹配中括号里的任意一个字符&lt;/p&gt;
+
+&lt;p&gt;[^xyz]：匹配除了中括号里的任意一个字符&lt;/p&gt;
+
+&lt;p&gt;\w：匹配任意一个数字或字母或下划线 等价于					[A-Za-z0-9_]&lt;/p&gt;
+
+&lt;p&gt;\d：匹配任意一个0–9之间的数字&lt;/p&gt;
+
+&lt;p&gt;模式修正符：i：忽略大小写&lt;/p&gt;
+
+&lt;p&gt;正则检测字符串函数：test()，成功返回true，失败返回false
+       例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;       &lt;span class=&quot;no&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zhangsan&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;no&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/^\w+$/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;no&quot;&gt;If&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)){&lt;/span&gt;
+   		 &lt;span class=&quot;no&quot;&gt;Alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“用户名合法”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;常用正则表达式举例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;     //用户名由6-18位的字母数字下划线组成，不能由数字开头
+
+     var r_name=/^[a-z_]\w{5,17}$/i
+
+     //密码长度不能少于六位
+
+     var r_pwd=/^\w{6,}$/
+
+     //所有的通用邮箱地址
+
+     var r_eamil=/^\w+@\w+(\.)\w+$/
+
+     //匹配一个QQ邮箱地址
+
+     //861745122@qq.com
+
+     var r_qq_email=/^\d{5,}@qq(\.)com$/
+
+     //匹配一个163的邮箱地址
+
+     var r_163_email=/^\w+@163(\.)com$/
+
+     //匹配一个后缀名可能是.com|.net|.cn|.edu
+
+     var email=/^\w+@\w+(\.)com|net|cn|edu$/
+
+    //要求输入有效的年龄段
+
+    var r_age=/^\d{1,2}$/
+
+    //if(age&amp;gt;=18&amp;amp;&amp;amp;age&amp;lt;=100)
+
+    //验证手机号:11位  13 15 18开头
+
+    var r_tel=/^1[3,5,8]\d{9}$/
+
+     //验证身份证号  18位或者17位加一个X
+
+   var r_s=/^\d{18}|\d{17}x$/i
+
+    //验证中文
+
+   var reg=/^[\u4e00-\u9fa5]{2,17}$/
+&lt;/code&gt;&lt;/pre&gt;
+
+   	    //php中文
+
+&lt;pre&gt;&lt;code&gt;   $reg = “/^[\x{4e00}-\x{9fa5}]$/u”
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6.深入理解客户端验证和服务器端验证表单信息的区别&lt;/p&gt;
+
+   	客户端的验证也就是js验证，只是为了提高用户的体验，
+
+   	在表单提交到服务器端之前做客户端信息的有效性验证。客户端的js很容易被用户禁止掉，
+
+   	如果客户端禁止了js，那么验证也就失效了，用户照样还可以提交非法数据。
+
+   	所以，保证入库数据的合法性和有效性必须采用服务器端php验证和客户端js验证结合的方式进行，
+
+   	服务器端的验证增加了验证的安全性和数据的合法性及有效性，为数据入库做了很好的铺垫，
+
+   	让数据库更准确的得到客户端的数据。
+
+&lt;p&gt;7.多文件上传&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vg&quot;&gt;$files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$_FILES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;goods_pic&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;vg&quot;&gt;$num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;name&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+        &lt;span class=&quot;vg&quot;&gt;$str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;vg&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pathinfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;name&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;extension&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])){&lt;/span&gt;
+                &lt;span class=&quot;vg&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniqid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;.&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;extension&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;   &lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;重新设置名字&lt;/span&gt;
+                &lt;span class=&quot;vg&quot;&gt;$lin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;tmp_name&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;move_uploaded_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;$lin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ROOT_DIR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;/images/&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;vg&quot;&gt;$path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ROOT_DIR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;/images/&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;vg&quot;&gt;$ctrlfile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str_replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;/&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;\\&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;vg&quot;&gt;$str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$ctrlfile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;,&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;vg&quot;&gt;$img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strlen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;8.实现分页步骤&lt;/p&gt;
+
+&lt;p&gt;第一步：查询出参与分页数据的总记录数&lt;/p&gt;
+
+&lt;p&gt;第二步：设定每页显示多少条数据&lt;/p&gt;
+
+&lt;p&gt;第三步：计算出总页数：ceil（总记录数/每页显示的条数）&lt;/p&gt;
+
+&lt;p&gt;第四步：获取当前页：$page=$_GET[‘page’]?$_GET[‘page’]:1;&lt;/p&gt;
+
+&lt;p&gt;第五步：计算偏移量：(当前页-1)*每页显示的条数&lt;/p&gt;
+
+&lt;p&gt;第六步：查询数据：select * from 表名 limit 偏移量,每页显示的条数&lt;/p&gt;
+
+&lt;p&gt;第七步：输出上一页、下一页、首页、尾页的超链接&lt;/p&gt;
+
+&lt;p&gt;9.ajax技术的概念，ajax的优缺点及应用场景&lt;/p&gt;
+
+&lt;p&gt;1)定义：ajax是一种技术，是由div+css javascript和xml技术组成&lt;/p&gt;
+
+&lt;p&gt;2)作用：异步存取，局部刷新，能实现无页面刷新的效果&lt;/p&gt;
+
+&lt;p&gt;3)Ajax优点：可以减轻服务器处理数据的压力，实现无页面刷新，增   强用户体验&lt;/p&gt;
+
+&lt;p&gt;4)Ajax缺点：不利于SEO（搜索引擎）优化&lt;/p&gt;
+
+&lt;p&gt;5)Ajax应用场景：在页面显示大量数据，实时更新的网站上，实现局部刷新，与后台服务器及时交互&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>php第一月总结!</title>
+   <link href="http://127.0.0.1/naringu/2015/02/21/one/"/>
+   <updated>2015-02-21T00:00:00+08:00</updated>
+   <id>http://127.0.0.1/naringu/2015/02/21/one</id>
+   <content type="html">&lt;p&gt;1.session
+运用session时，首先要Session_Start();开启session
+存session：$_SESSION[“name”]=”value”;
+取session：echo $_SESSION[“name”];
+销毁session：session_destroy();&lt;/p&gt;
+
+&lt;p&gt;2.cookie
+setcookie(“UserName”,”zs”,time()+2&lt;em&gt;7&lt;/em&gt;24*3600);
+第一个参数为键名，第二个参数为值，第三个参数为过期时间
+去cookie值：$_COOKIE[‘UserName’];
+删除一个cookie：setcookie(‘UserName’, NULL);&lt;/p&gt;
+
+&lt;p&gt;3.pdo
+使用pdo时要开启pdo扩展。
+什么是pdo？
+PDO：PHP data object，php数据对象，也叫php数据抽象层，是一种能够管理多种不同数据库的数据对
+象，PHP只需要去调用PDO，而不用去在意PDO底层管理的数据库到底是采用什么样的方式，哪些方法来实
+现的功能。让PHP操作数据库变得简单。
+使用：$pdo=new PDO(‘mysql:host=127.0.0.1;dbname=hehe’,’root’,’root’);
+三个参数
+	$dsn：数据库类型:host=主机地址;port=端口号;dbname=数据库
+	$user：用户名
+	$pass：密码
+必须区分SQL语句到底是什么操作：写操作使用exec，读操作使用query
+例如：$pdo-&amp;gt;query(‘select * from login’)-&amp;gt;fetchAll(PDO::FETCH_ASSOC)；
+      $pdo-&amp;gt;exec(‘delete from login’);&lt;/p&gt;
+
+&lt;p&gt;4.mysqli	
+$mysqli = mysqli_connect($cfg_dbhost,$cfg_dbuser,$cfg_dbpwd,$cfg_dbname);
+四个参数
+	$cfg_dbhost：127.0.0.1
+	$cfg_dbuser：用户名
+	$cfg_dbpwd：密码
+	$cfg_dbname: 数据库
+mysqli_query($mysqli,”set names utf8”);
+例如：$sql = “select * from test”;
+ $res = mysqli_query($mysqli,$sql);
+$row=mysqli_fetch_array($res);
+print_r($row);  	//这会是一个二维数组&lt;/p&gt;
+
+&lt;p&gt;5.搜索高量显示
+搜索一个关键字，并且把关键字标红
+例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vg&quot;&gt;$arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue,red,green,yellow&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str_replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;font color=&#39;red&#39;&amp;gt;red&amp;lt;/font&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;结果为red是高亮显示&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>jeykll + github 发博客!</title>
