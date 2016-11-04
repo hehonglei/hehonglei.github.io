@@ -4,7 +4,7 @@
  <title>可了头i的博客</title>
  <link href="http://127.0.0.1/atom.xml" rel="self"/>
  <link href="http://127.0.0.1/"/>
- <updated>2016-10-31T21:08:05+08:00</updated>
+ <updated>2016-11-04T19:43:02+08:00</updated>
  <id>http://127.0.0.1</id>
  <author>
    <name>Rizky Ariestiyansyah</name>
@@ -13,10 +13,387 @@
 
  
  <entry>
+   <title>面向对象!</title>
+   <link href="http://127.0.0.1/naringu/2014/06/12/three/"/>
+   <updated>2014-06-12T00:00:00+08:00</updated>
+   <id>http://127.0.0.1/naringu/2014/06/12/three</id>
+   <content type="html">&lt;p&gt;面向对象是一种计算机编程架构，比面向过程具有更强的灵活性和扩展性。&lt;/p&gt;
+
+&lt;p&gt;1)主流软件开发语言离不开面向对象&lt;/p&gt;
+
+&lt;p&gt;2)主流网站开发语言离不开面向对象&lt;/p&gt;
+
+&lt;p&gt;3)工作中需要，企业招聘有些明确要求掌握面向对象编程&lt;/p&gt;
+
+&lt;p&gt;4)主流php框架都是面向对象编程方式实现(如ThinkPHP,CI,YII,Zend framework等)&lt;/p&gt;
+
+&lt;p&gt;2.面向对象（OO）包括3部分内容&lt;/p&gt;
+
+&lt;p&gt;1)面向对象分析（Object Oriented Analysis,OOA）
+2)面向对象设计（Object Oriented Design,OOD）
+3)面向对象编程（Object Oriented Programming,OOP）,这是我们常说的面向对象编程。&lt;/p&gt;
+
+&lt;p&gt;3.类和对象&lt;/p&gt;
+
+&lt;p&gt;1）类：具有相同属性和方法的事物的集合，是抽象的。&lt;/p&gt;
+
+&lt;p&gt;类的组成：&lt;/p&gt;
+
+&lt;p&gt;属性（也称变量或成员变量）&lt;/p&gt;
+
+&lt;p&gt;方法（类中的函数被称为方法或成员方法）&lt;/p&gt;
+
+&lt;p&gt;常量  (无法更改或撤销定义)&lt;/p&gt;
+
+&lt;p&gt;2）对象：是类的实例化结果，是具体的。&lt;/p&gt;
+
+&lt;p&gt;3）通过标签找对象：document.getElementsByTagName(“标签名”)&lt;/p&gt;
+
+&lt;p&gt;比如：说学生（模糊的抽象的一类），而具体的一个学生就是一个对象。&lt;/p&gt;
+
+&lt;p&gt;4.面向对象三大特点&lt;/p&gt;
+
+&lt;p&gt;1）封装性&lt;/p&gt;
+
+&lt;p&gt;也称为信息隐藏。就是将一个类的使用和实现分开。只保留有限的接口与外部联系。使用者不必关心具体的实现，只知道每个方法的调用方式即可。&lt;/p&gt;
+
+&lt;p&gt;好处：避免了程序之间的依赖性。&lt;/p&gt;
+
+&lt;p&gt;2）继承性&lt;/p&gt;
+
+&lt;p&gt;继承性就是派生类（子类）自动继承父类中的属性和方法，并可以修改或添加新的属性和方法。&lt;/p&gt;
+
+&lt;p&gt;注意：继承分单继承和多继承，php支持的是单继承，一个子类只能有一个父类。&lt;/p&gt;
+
+&lt;p&gt;好处：提高了代码的重用性。&lt;/p&gt;
+
+&lt;p&gt;3）多态性：&lt;/p&gt;
+
+&lt;p&gt;多态即多种形态，具有表现多种形态的能力特征。在面向对象中表示根据对象的类型以不同方式处理（说白了就是调用同一个方法可以获得不同的结果）。&lt;/p&gt;
+
+&lt;p&gt;好处：增强了软件的灵活性。&lt;/p&gt;
+
+&lt;p&gt;5.访问控制&lt;/p&gt;
+
+&lt;p&gt;在属性或方法前面添加关键字 public（公有），protected（受保护）或 private（私有）来实现的。&lt;/p&gt;
+
+&lt;p&gt;公有的类成员可以在任何地方被访问。&lt;/p&gt;
+
+&lt;p&gt;受保护的类成员则可以被其自身以及其子类和父类访问。&lt;/p&gt;
+
+&lt;p&gt;私有的类成员则只能被其定义所在的类访问。&lt;/p&gt;
+
+&lt;p&gt;6.封装&lt;/p&gt;
+
+&lt;p&gt;封装：将数据（属性）以及对数据的操作（方法）捆绑到一起，形成对外的数据隐藏。只对外提供可以调用的接口供其使用。（public的方法和属性）。&lt;/p&gt;
+
+&lt;p&gt;封装的过程称之为抽象：将具有相同特性的一类事务，把公共的内容抽离出来，形成文字描述的过程。&lt;/p&gt;
+
+&lt;p&gt;7.继承&lt;/p&gt;
+
+&lt;p&gt;语法：&lt;/p&gt;
+
+&lt;p&gt;父类：拥有一些可以被继承的属性和方法&lt;/p&gt;
+
+&lt;p&gt;子类：想拥有自己不存在但是在别的类中存在的属性和方法&lt;/p&gt;
+
+&lt;p&gt;关键字：extends&lt;/p&gt;
+
+&lt;p&gt;子类 extends 父类&lt;/p&gt;
+
+&lt;p&gt;继承的优点&lt;/p&gt;
+
+&lt;p&gt;1)便于扩展（子类可以在父类的基础上增加自己的特点）&lt;/p&gt;
+
+&lt;p&gt;2)节省代码：提高代码的复用性&lt;/p&gt;
+
+&lt;p&gt;继承的细节&lt;/p&gt;
+
+&lt;p&gt;①　子类最多只能继承一个父类（指直接继承）&lt;/p&gt;
+
+&lt;p&gt;②　子类可以继承其父类的public,protected修饰的属性和方法。&lt;/p&gt;
+
+&lt;p&gt;③　在创建某个子类对象时，默认情况下不会自动调用其父类的构造函数。&lt;/p&gt;
+
+&lt;p&gt;④　如果在子类中需要访问父类中（以public/protected修饰）的方法，可以使用&lt;/p&gt;
+
+&lt;p&gt;父类：：方法名或者是parent::方法名。&lt;/p&gt;
+
+&lt;p&gt;如果子类（派生类）中的方法和父类（基类）方法相同，我们称之为方法重写/方&lt;/p&gt;
+
+&lt;p&gt;继承：子类可以使用父类的属性和方法（除私有的）。&lt;/p&gt;
+
+&lt;p&gt;8.多态&lt;/p&gt;
+
+&lt;p&gt;多态：多种形态，在存在继承的情况下，子类必须重写父类的方法（子类拥有与父类同名的方法）&lt;/p&gt;
+
+&lt;p&gt;9.使用$this访问方法和属性&lt;/p&gt;
+
+&lt;p&gt;我们学习过，实例化对象后，可以通过对象名来调用类中的属性和方法。&lt;/p&gt;
+
+&lt;p&gt;对象名-&amp;gt;属性名&lt;/p&gt;
+
+&lt;p&gt;对象名-&amp;gt;方法名()&lt;/p&gt;
+
+&lt;p&gt;类的内部如需调用本类的成员属性和成员方法，可借助伪变量$this。&lt;/p&gt;
+
+&lt;p&gt;$this-&amp;gt;属性名&lt;/p&gt;
+
+&lt;p&gt;$this-&amp;gt;方法名()&lt;/p&gt;
+
+&lt;p&gt;原理：当一个对象($a)调用其方法(who())时，该方法执行之前，先完成一个绑定。就是$this绑定到调用该方法的那个对象上。&lt;/p&gt;
+
+&lt;p&gt;10.self与$this的区别&lt;/p&gt;
+
+&lt;p&gt;1)self ：代表本类，自身（不要理解为本类的对象），$this代表对象&lt;/p&gt;
+
+&lt;p&gt;2)self访问类内部的常量和静态成员，$this访问对象的属性和普通方法&lt;/p&gt;
+
+&lt;p&gt;3)self必须配合范围解析操作符（::）才能生效，$this代表对象，对象本来就是一种数据类型，所以$this可以单独被打印。&lt;/p&gt;
+
+&lt;p&gt;4)能用$this的地方，一定可以使用self，但是能使用self的地方不一定可以使用$this&lt;/p&gt;
+
+&lt;p&gt;5)非静态的属性和方法均用对象（$this）访问，静态的方法和属性或常量均用类(self)来访问&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>linux的使用!</title>
+   <link href="http://127.0.0.1/naringu/2014/06/12/four/"/>
+   <updated>2014-06-12T00:00:00+08:00</updated>
+   <id>http://127.0.0.1/naringu/2014/06/12/four</id>
+   <content type="html">&lt;p&gt;1.linux命令：&lt;/p&gt;
+
+&lt;p&gt;解压文件：
+         tar指令 –zxvf 源码包&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;     -zxf 解压参数
+
+     -v  显示进度（一般情况下可以不写）
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装：yum install [-y] [rpm包名]&lt;/p&gt;
+
+&lt;p&gt;卸载：yum remove [-y] [rpm包名]&lt;/p&gt;
+
+&lt;p&gt;升级：yum update [-y] [rpm包]&lt;/p&gt;
+
+&lt;p&gt;新建：Touch 文件名   touch 1.txt&lt;/p&gt;
+
+&lt;p&gt;kill   -杀死方式  进程ID&lt;/p&gt;
+
+&lt;p&gt;复制：Cp 源文件  目标文件    cp -v /home/hehe  ./hehe&lt;/p&gt;
+
+&lt;p&gt;移动：mv 参数 源文件 目标文件   mv -v /home/hehe ./hehe&lt;/p&gt;
+
+&lt;p&gt;删除：rm -rf 文件夹或文件&lt;/p&gt;
+
+&lt;p&gt;查看：find -name   根据文件的名称查找&lt;/p&gt;
+
+&lt;p&gt;管道命令：grep 参数 字符串 源文件&lt;/p&gt;
+
+&lt;p&gt;解压缩： tar -xvf linuxqq.tar.gz&lt;/p&gt;
+
+&lt;p&gt;关机命令：Halt Poweroff Shutdown Reboot&lt;/p&gt;
+
+&lt;p&gt;帮助命令：2.7.1――help man&lt;/p&gt;
+
+&lt;p&gt;2.Vim/Vi文本编辑器应用&lt;/p&gt;
+
+&lt;p&gt;:w ：保存当前文件&lt;/p&gt;
+
+&lt;p&gt;:q（quit）：退出当前文件&lt;/p&gt;
+
+&lt;p&gt;:wq ：保存并退出&lt;/p&gt;
+
+&lt;p&gt;:q! ：强制退出&lt;/p&gt;
+
+&lt;p&gt;:wq! ：强制保存退出&lt;/p&gt;
+
+&lt;p&gt;:set nu ：显示当前文件行号&lt;/p&gt;
+
+&lt;p&gt;:set nonu ：隐藏当前行号&lt;/p&gt;
+
+&lt;p&gt;:noh ：取消高亮显示&lt;/p&gt;
+
+&lt;p&gt;:u ：撤销&lt;/p&gt;
+
+&lt;p&gt;dd ：剪切当前行&lt;/p&gt;
+
+&lt;p&gt;ndd:剪切n行&lt;/p&gt;
+
+&lt;p&gt;yy ：复制当前行&lt;/p&gt;
+
+&lt;p&gt;nyy: 复制n行&lt;/p&gt;
+
+&lt;p&gt;p ：粘贴&lt;/p&gt;
+
+&lt;p&gt;3.vi常用快捷键&lt;/p&gt;
+
+&lt;p&gt;1)移动光标&lt;/p&gt;
+
+&lt;p&gt;h ：光标左移一个字符&lt;/p&gt;
+
+&lt;p&gt;j ：光标上移一个字符&lt;/p&gt;
+
+&lt;p&gt;k ：光标下移一个字符&lt;/p&gt;
+
+&lt;p&gt;l ：光标右移一个字符&lt;/p&gt;
+
+&lt;p&gt;0 ：光标移至行首&lt;/p&gt;
+
+&lt;p&gt;$ ：光标移至行尾&lt;/p&gt;
+
+&lt;p&gt;H ：光标移至屏幕首行&lt;/p&gt;
+
+&lt;p&gt;M ：光标移至屏幕中间&lt;/p&gt;
+
+&lt;p&gt;L ：光标移至屏幕最末行&lt;/p&gt;
+
+&lt;p&gt;2)插入文本&lt;/p&gt;
+
+&lt;p&gt;i ：在光标前插内内容&lt;/p&gt;
+
+&lt;p&gt;a ：在光标后插入内容&lt;/p&gt;
+
+&lt;p&gt;o ：在所在行的下一行插入新行&lt;/p&gt;
+
+&lt;p&gt;O ：在所在行的上一行插入新行&lt;/p&gt;
+
+&lt;p&gt;3)删除文本&lt;/p&gt;
+
+&lt;p&gt;x：删除光标后面的字符&lt;/p&gt;
+
+&lt;p&gt;X：删除光标前面的字符&lt;/p&gt;
+
+&lt;p&gt;nx：删除光标后面n个字符&lt;/p&gt;
+
+&lt;p&gt;nX：删除光标前面的n个字符&lt;/p&gt;
+
+&lt;p&gt;d0：删除光标至行首的内容&lt;/p&gt;
+
+&lt;p&gt;d$：删除光标至行尾的内容&lt;/p&gt;
+
+&lt;p&gt;dd ：删除整行&lt;/p&gt;
+
+&lt;p&gt;ndd ：向下删除n行&lt;/p&gt;
+
+&lt;p&gt;4)复制文本&lt;/p&gt;
+
+&lt;p&gt;yy ：复制整行&lt;/p&gt;
+
+&lt;p&gt;nyy ：复制n行&lt;/p&gt;
+
+&lt;p&gt;p ：在所在行下一行粘贴&lt;/p&gt;
+
+&lt;p&gt;P ：在所在行上一行粘贴&lt;/p&gt;
+
+&lt;p&gt;dd ：剪切&lt;/p&gt;
+
+&lt;p&gt;5)查找文本&lt;/p&gt;
+
+&lt;p&gt;/pattern ：向下查找&lt;/p&gt;
+
+&lt;p&gt;?pattern ：向上查找&lt;/p&gt;
+
+&lt;p&gt;n ：顺序查找&lt;/p&gt;
+
+&lt;p&gt;N ：反向查找&lt;/p&gt;
+
+&lt;p&gt;:s/p1/p2/g ：在当前行，将p1替换成p2&lt;/p&gt;
+
+&lt;p&gt;:n1,n2s/p1/p2/g ：将n1至n2行之间的p1替换成p2&lt;/p&gt;
+
+&lt;p&gt;6)屏幕翻滚&lt;/p&gt;
+
+&lt;p&gt;ctrl+u：向文件首翻半屏&lt;/p&gt;
+
+&lt;p&gt;ctrl+d：向文件尾翻半屏&lt;/p&gt;
+
+&lt;p&gt;ctrl+f：向文件尾翻一屏&lt;/p&gt;
+
+&lt;p&gt;ctrl+b：向文件首翻一屏&lt;/p&gt;
+
+&lt;p&gt;4.scp 远程文件管理（Linux对Linux）&lt;/p&gt;
+
+&lt;p&gt;scp 本地文件 远程文件  ： 上传文件
+scp test.php root@192.168.1.18:/root/&lt;/p&gt;
+
+&lt;p&gt;scp 远程文件 本地文件  ： 下载文件
+scp root@192.168.1.20:/root/tian.php /root/&lt;/p&gt;
+
+&lt;p&gt;scp –r 文件夹 文件夹
+scp -r root@192.168.1.20:/root/won /root/won22&lt;/p&gt;
+
+&lt;p&gt;5.LAMP环境搭建及管理和lnmp搭建及管理&lt;/p&gt;
+
+&lt;p&gt;可参考&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/zph1234/article/details/51250523&quot;&gt;http://blog.csdn.net/zph1234/article/details/51250523&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/zph1234/article/details/51248124&quot;&gt;http://blog.csdn.net/zph1234/article/details/51248124&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;6.SVN安装
+21.2(1)掌握SVN的安装
+yum install subversion
+(2)掌握SVN版本库的创建
+svnadmin create 版本库的路径
+svnadmin create /usr/local/svn/sunny
+(3)掌握SVN的配置
+1)掌握配置文件的目录当前版本库的conf目录下
+2)掌握配置版本库信息和用户文件和用户密码文件的路径、版本库路径
+① # anon-access = read
+②# auth-access = write
+③# password-db = passwd
+④将以上三行的注释去掉
+3)掌握创建svn组和组用户的权限
+①[group]
+sunny = gep,wce //创建一个sunny的组，并指定两个用户gep和wce
+②[/]             //制定根目录下的权限
+@sunny = rw     //sunny组用户权限为读写
+* = r           //其他用户只有读权限
+③保存退出
+4)掌握创建或修改用户密码
+	①[users]
+gep = 123456    //用户名为gep的用户的密码为123456
+wce = 123456    //。。。
+②保存退出
+(4)掌握SVN的启动
+1)掌握多版本库启动svnserve -d -r 版本库目录
+2)掌握单版本启动   svnserve -d -r 版本库目录/版本库名
+(5)掌握SVN的自动启动
+1)vi /etc/rc.local    打开自启动文件添加
+2)/usr/bin/svnserve -d -r /usr/local/svn/
+(6)掌握SVN的自动更新
+1)在vi /版本库目录/hooks/post-commit中加入
+2)#!/bin/sh
+3)#设置一些变量
+4)SVN=/usr/bin/svn
+5)WEB=/data0/htdocs/ecshop #要更新的目录
+6)export LANG=en_US.UTF-8
+7)$SVN update $WEB –username wsss –password 123
+(7)掌握SVN命令方式检出
+Svn checkout 版本库的路径 检出的路径
+(8)掌握SVN客户端检出
+&lt;img src=&quot;/../images/img1.png&quot; alt=&quot;cookie&quot; /&gt;
+(9)SVN对比工具(beyondCompare)&lt;/p&gt;
+
+&lt;p&gt;1)”C:\Program Files (x86)\Beyond Compare 3\BComp.exe” %base %mine /title1=%bname /title2=%yname /leftreadonly&lt;/p&gt;
+
+&lt;p&gt;2)”C:\Program Files (x86)\Beyond Compare 3\BCompare.exe”
+&lt;img src=&quot;/../images/img2.png&quot; alt=&quot;cookie&quot; /&gt;
+“C:\Program Files (x86)\Beyond Compare 3\BComp.exe” %mine %theirs %base %merged /title1=%yname /title2=%tname /title3=%bname /title4=%mname
+&lt;img src=&quot;/../images/img3.png&quot; alt=&quot;cookie&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>javascript!</title>
-   <link href="http://127.0.0.1/naringu/2015/02/21/two/"/>
-   <updated>2015-02-21T00:00:00+08:00</updated>
-   <id>http://127.0.0.1/naringu/2015/02/21/two</id>
+   <link href="http://127.0.0.1/naringu/2014/04/09/two/"/>
+   <updated>2014-04-09T00:00:00+08:00</updated>
+   <id>http://127.0.0.1/naringu/2014/04/09/two</id>
    <content type="html">&lt;p&gt;1.什么是javascript？它的特点是什么？它的作用是什么？
 定义：javascript是一门客户端的脚本语言，可以嵌套到html里面，浏览器能直接解析。&lt;/p&gt;
 
@@ -115,9 +492,9 @@
    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;常用正则表达式举例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   常用正则表达式举例：
 
-&lt;pre&gt;&lt;code&gt;     //用户名由6-18位的字母数字下划线组成，不能由数字开头
+     //用户名由6-18位的字母数字下划线组成，不能由数字开头
 
      var r_name=/^[a-z_]\w{5,17}$/i
 
@@ -162,9 +539,9 @@
    var reg=/^[\u4e00-\u9fa5]{2,17}$/
 &lt;/code&gt;&lt;/pre&gt;
 
-   	    //php中文
+   	      //php中文
 
-&lt;pre&gt;&lt;code&gt;   $reg = “/^[\x{4e00}-\x{9fa5}]$/u”
+&lt;pre&gt;&lt;code&gt;    $reg = “/^[\x{4e00}-\x{9fa5}]$/u”
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;6.深入理解客户端验证和服务器端验证表单信息的区别&lt;/p&gt;
@@ -233,9 +610,9 @@
  
  <entry>
    <title>php第一月总结!</title>
-   <link href="http://127.0.0.1/naringu/2015/02/21/one/"/>
-   <updated>2015-02-21T00:00:00+08:00</updated>
-   <id>http://127.0.0.1/naringu/2015/02/21/one</id>
+   <link href="http://127.0.0.1/naringu/2014/03/18/one/"/>
+   <updated>2014-03-18T00:00:00+08:00</updated>
+   <id>http://127.0.0.1/naringu/2014/03/18/one</id>
    <content type="html">&lt;p&gt;1.session
 运用session时，首先要Session_Start();开启session
 存session：$_SESSION[“name”]=”value”;
@@ -289,9 +666,9 @@ print_r($row);  	//这会是一个二维数组&lt;/p&gt;
  
  <entry>
    <title>jeykll + github 发博客!</title>
-   <link href="http://127.0.0.1/naringu/2015/02/21/hahah/"/>
-   <updated>2015-02-21T00:00:00+08:00</updated>
-   <id>http://127.0.0.1/naringu/2015/02/21/hahah</id>
+   <link href="http://127.0.0.1/naringu/2014/02/21/hahah/"/>
+   <updated>2014-02-21T00:00:00+08:00</updated>
+   <id>http://127.0.0.1/naringu/2014/02/21/hahah</id>
    <content type="html">&lt;ol&gt;
   &lt;li&gt;首先你要在github上创建一个版本库
 名字必须和版本库的名字相同&lt;/li&gt;

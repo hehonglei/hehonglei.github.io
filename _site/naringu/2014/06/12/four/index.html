@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      linux的使用! &middot; 可了头i的博客
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/naringu.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/form.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="./public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="Mozilla RSS" href="feed.category.xml">
+  </head>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48740529-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<body class="theme-6dd">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+      <img width="125" height="125" alt="A photo of ariestiyansyah" src="/images/head.jpeg">
+    <p>oonlab is crafted with <3 by ariestiyansyah.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/categories/">Category Index</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/contact/">Contact</a>
+        
+      
+    
+      
+    
+
+    <a class="sidebar-nav-item" href="http://github.com">GitHub project</a>
+    <span class="sidebar-nav-item">Version 2.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2016. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">可了头i的博客</a>
+            <small>A GOOD MAN</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">linux的使用!</h1>
+  <span class="post-date">12 Jun 2014</span>
+  <p>1.linux命令：</p>
+
+<p>解压文件：
+         tar指令 –zxvf 源码包</p>
+
+<pre><code>     -zxf 解压参数
+
+     -v  显示进度（一般情况下可以不写）
+</code></pre>
+
+<p>安装：yum install [-y] [rpm包名]</p>
+
+<p>卸载：yum remove [-y] [rpm包名]</p>
+
+<p>升级：yum update [-y] [rpm包]</p>
+
+<p>新建：Touch 文件名   touch 1.txt</p>
+
+<p>kill   -杀死方式  进程ID</p>
+
+<p>复制：Cp 源文件  目标文件    cp -v /home/hehe  ./hehe</p>
+
+<p>移动：mv 参数 源文件 目标文件   mv -v /home/hehe ./hehe</p>
+
+<p>删除：rm -rf 文件夹或文件</p>
+
+<p>查看：find -name   根据文件的名称查找</p>
+
+<p>管道命令：grep 参数 字符串 源文件</p>
+
+<p>解压缩： tar -xvf linuxqq.tar.gz</p>
+
+<p>关机命令：Halt Poweroff Shutdown Reboot</p>
+
+<p>帮助命令：2.7.1――help man</p>
+
+<p>2.Vim/Vi文本编辑器应用</p>
+
+<p>:w ：保存当前文件</p>
+
+<p>:q（quit）：退出当前文件</p>
+
+<p>:wq ：保存并退出</p>
+
+<p>:q! ：强制退出</p>
+
+<p>:wq! ：强制保存退出</p>
+
+<p>:set nu ：显示当前文件行号</p>
+
+<p>:set nonu ：隐藏当前行号</p>
+
+<p>:noh ：取消高亮显示</p>
+
+<p>:u ：撤销</p>
+
+<p>dd ：剪切当前行</p>
+
+<p>ndd:剪切n行</p>
+
+<p>yy ：复制当前行</p>
+
+<p>nyy: 复制n行</p>
+
+<p>p ：粘贴</p>
+
+<p>3.vi常用快捷键</p>
+
+<p>1)移动光标</p>
+
+<p>h ：光标左移一个字符</p>
+
+<p>j ：光标上移一个字符</p>
+
+<p>k ：光标下移一个字符</p>
+
+<p>l ：光标右移一个字符</p>
+
+<p>0 ：光标移至行首</p>
+
+<p>$ ：光标移至行尾</p>
+
+<p>H ：光标移至屏幕首行</p>
+
+<p>M ：光标移至屏幕中间</p>
+
+<p>L ：光标移至屏幕最末行</p>
+
+<p>2)插入文本</p>
+
+<p>i ：在光标前插内内容</p>
+
+<p>a ：在光标后插入内容</p>
+
+<p>o ：在所在行的下一行插入新行</p>
+
+<p>O ：在所在行的上一行插入新行</p>
+
+<p>3)删除文本</p>
+
+<p>x：删除光标后面的字符</p>
+
+<p>X：删除光标前面的字符</p>
+
+<p>nx：删除光标后面n个字符</p>
+
+<p>nX：删除光标前面的n个字符</p>
+
+<p>d0：删除光标至行首的内容</p>
+
+<p>d$：删除光标至行尾的内容</p>
+
+<p>dd ：删除整行</p>
+
+<p>ndd ：向下删除n行</p>
+
+<p>4)复制文本</p>
+
+<p>yy ：复制整行</p>
+
+<p>nyy ：复制n行</p>
+
+<p>p ：在所在行下一行粘贴</p>
+
+<p>P ：在所在行上一行粘贴</p>
+
+<p>dd ：剪切</p>
+
+<p>5)查找文本</p>
+
+<p>/pattern ：向下查找</p>
+
+<p>?pattern ：向上查找</p>
+
+<p>n ：顺序查找</p>
+
+<p>N ：反向查找</p>
+
+<p>:s/p1/p2/g ：在当前行，将p1替换成p2</p>
+
+<p>:n1,n2s/p1/p2/g ：将n1至n2行之间的p1替换成p2</p>
+
+<p>6)屏幕翻滚</p>
+
+<p>ctrl+u：向文件首翻半屏</p>
+
+<p>ctrl+d：向文件尾翻半屏</p>
+
+<p>ctrl+f：向文件尾翻一屏</p>
+
+<p>ctrl+b：向文件首翻一屏</p>
+
+<p>4.scp 远程文件管理（Linux对Linux）</p>
+
+<p>scp 本地文件 远程文件  ： 上传文件
+scp test.php root@192.168.1.18:/root/</p>
+
+<p>scp 远程文件 本地文件  ： 下载文件
+scp root@192.168.1.20:/root/tian.php /root/</p>
+
+<p>scp –r 文件夹 文件夹
+scp -r root@192.168.1.20:/root/won /root/won22</p>
+
+<p>5.LAMP环境搭建及管理和lnmp搭建及管理</p>
+
+<p>可参考</p>
+
+<p><a href="http://blog.csdn.net/zph1234/article/details/51250523">http://blog.csdn.net/zph1234/article/details/51250523</a></p>
+
+<p><a href="http://blog.csdn.net/zph1234/article/details/51248124">http://blog.csdn.net/zph1234/article/details/51248124</a></p>
+
+<p>6.SVN安装
+21.2(1)掌握SVN的安装
+yum install subversion
+(2)掌握SVN版本库的创建
+svnadmin create 版本库的路径
+svnadmin create /usr/local/svn/sunny
+(3)掌握SVN的配置
+1)掌握配置文件的目录当前版本库的conf目录下
+2)掌握配置版本库信息和用户文件和用户密码文件的路径、版本库路径
+① # anon-access = read
+②# auth-access = write
+③# password-db = passwd
+④将以上三行的注释去掉
+3)掌握创建svn组和组用户的权限
+①[group]
+sunny = gep,wce //创建一个sunny的组，并指定两个用户gep和wce
+②[/]             //制定根目录下的权限
+@sunny = rw     //sunny组用户权限为读写
+* = r           //其他用户只有读权限
+③保存退出
+4)掌握创建或修改用户密码
+	①[users]
+gep = 123456    //用户名为gep的用户的密码为123456
+wce = 123456    //。。。
+②保存退出
+(4)掌握SVN的启动
+1)掌握多版本库启动svnserve -d -r 版本库目录
+2)掌握单版本启动   svnserve -d -r 版本库目录/版本库名
+(5)掌握SVN的自动启动
+1)vi /etc/rc.local    打开自启动文件添加
+2)/usr/bin/svnserve -d -r /usr/local/svn/
+(6)掌握SVN的自动更新
+1)在vi /版本库目录/hooks/post-commit中加入
+2)#!/bin/sh
+3)#设置一些变量
+4)SVN=/usr/bin/svn
+5)WEB=/data0/htdocs/ecshop #要更新的目录
+6)export LANG=en_US.UTF-8
+7)$SVN update $WEB –username wsss –password 123
+(7)掌握SVN命令方式检出
+Svn checkout 版本库的路径 检出的路径
+(8)掌握SVN客户端检出
+<img src="/../images/img1.png" alt="cookie" />
+(9)SVN对比工具(beyondCompare)</p>
+
+<p>1)”C:\Program Files (x86)\Beyond Compare 3\BComp.exe” %base %mine /title1=%bname /title2=%yname /leftreadonly</p>
+
+<p>2)”C:\Program Files (x86)\Beyond Compare 3\BCompare.exe”
+<img src="/../images/img2.png" alt="cookie" />
+“C:\Program Files (x86)\Beyond Compare 3\BComp.exe” %mine %theirs %base %merged /title1=%yname /title2=%tname /title3=%bname /title4=%mname
+<img src="/../images/img3.png" alt="cookie" /></p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/naringu/2014/06/12/three/">
+            面向对象!
+            <small>12 Jun 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/naringu/2014/04/09/two/">
+            javascript!
+            <small>09 Apr 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/naringu/2014/03/18/one/">
+            php第一月总结!
+            <small>18 Mar 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<div class="comments">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'testnaringu';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'testnaringu';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+
+    <div align="center" class="footer">
+        <a href="https://github.com/ariestiyansyah/naringu" target="_blank" title="naringu">Naringu</a>  is designed by Rizky Ariestiyansyah<br />Copyright © 2016 <br>
+    </div>
+  </body>
+</html>
+

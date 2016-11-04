@@ -11,7 +11,7 @@
 
   <title>
     
-      php第一月总结! &middot; 可了头i的博客
+      面向对象! &middot; 可了头i的博客
     
   </title>
 
@@ -116,56 +116,146 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">php第一月总结!</h1>
+  <h1 class="post-title">面向对象!</h1>
   <span class="post-date">21 Feb 2015</span>
-  <p>1.session
-运用session时，首先要Session_Start();开启session
-存session：$_SESSION[“name”]=”value”;
-取session：echo $_SESSION[“name”];
-销毁session：session_destroy();</p>
+  <p>面向对象是一种计算机编程架构，比面向过程具有更强的灵活性和扩展性。</p>
 
-<p>2.cookie
-setcookie(“UserName”,”zs”,time()+2<em>7</em>24*3600);
-第一个参数为键名，第二个参数为值，第三个参数为过期时间
-去cookie值：$_COOKIE[‘UserName’];
-删除一个cookie：setcookie(‘UserName’, NULL);</p>
+<p>1)主流软件开发语言离不开面向对象</p>
 
-<p>3.pdo
-使用pdo时要开启pdo扩展。
-什么是pdo？
-PDO：PHP data object，php数据对象，也叫php数据抽象层，是一种能够管理多种不同数据库的数据对
-象，PHP只需要去调用PDO，而不用去在意PDO底层管理的数据库到底是采用什么样的方式，哪些方法来实
-现的功能。让PHP操作数据库变得简单。
-使用：$pdo=new PDO(‘mysql:host=127.0.0.1;dbname=hehe’,’root’,’root’);
-三个参数
-	$dsn：数据库类型:host=主机地址;port=端口号;dbname=数据库
-	$user：用户名
-	$pass：密码
-必须区分SQL语句到底是什么操作：写操作使用exec，读操作使用query
-例如：$pdo-&gt;query(‘select * from login’)-&gt;fetchAll(PDO::FETCH_ASSOC)；
-      $pdo-&gt;exec(‘delete from login’);</p>
+<p>2)主流网站开发语言离不开面向对象</p>
 
-<p>4.mysqli	
-$mysqli = mysqli_connect($cfg_dbhost,$cfg_dbuser,$cfg_dbpwd,$cfg_dbname);
-四个参数
-	$cfg_dbhost：127.0.0.1
-	$cfg_dbuser：用户名
-	$cfg_dbpwd：密码
-	$cfg_dbname: 数据库
-mysqli_query($mysqli,”set names utf8”);
-例如：$sql = “select * from test”;
- $res = mysqli_query($mysqli,$sql);
-$row=mysqli_fetch_array($res);
-print_r($row);  	//这会是一个二维数组</p>
+<p>3)工作中需要，企业招聘有些明确要求掌握面向对象编程</p>
 
-<p>5.搜索高量显示
-搜索一个关键字，并且把关键字标红
-例如：</p>
+<p>4)主流php框架都是面向对象编程方式实现(如ThinkPHP,CI,YII,Zend framework等)</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vg">$arr</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"blue,red,green,yellow"</span><span class="p">);</span>
-<span class="n">print_r</span><span class="p">(</span><span class="n">str_replace</span><span class="p">(</span><span class="s2">"red"</span><span class="p">,</span><span class="s2">"&lt;font color='red'&gt;red&lt;/font&gt;"</span><span class="p">,</span><span class="vg">$arr</span><span class="p">));</span></code></pre></figure>
+<p>2.面向对象（OO）包括3部分内容</p>
 
-<p>结果为red是高亮显示</p>
+<p>1)面向对象分析（Object Oriented Analysis,OOA）
+2)面向对象设计（Object Oriented Design,OOD）
+3)面向对象编程（Object Oriented Programming,OOP）,这是我们常说的面向对象编程。</p>
+
+<p>3.类和对象</p>
+
+<p>1）类：具有相同属性和方法的事物的集合，是抽象的。</p>
+
+<p>类的组成：</p>
+
+<p>属性（也称变量或成员变量）</p>
+
+<p>方法（类中的函数被称为方法或成员方法）</p>
+
+<p>常量  (无法更改或撤销定义)</p>
+
+<p>2）对象：是类的实例化结果，是具体的。</p>
+
+<p>3）通过标签找对象：document.getElementsByTagName(“标签名”)</p>
+
+<p>比如：说学生（模糊的抽象的一类），而具体的一个学生就是一个对象。</p>
+
+<p>4.面向对象三大特点</p>
+
+<p>1）封装性</p>
+
+<p>也称为信息隐藏。就是将一个类的使用和实现分开。只保留有限的接口与外部联系。使用者不必关心具体的实现，只知道每个方法的调用方式即可。</p>
+
+<p>好处：避免了程序之间的依赖性。</p>
+
+<p>2）继承性</p>
+
+<p>继承性就是派生类（子类）自动继承父类中的属性和方法，并可以修改或添加新的属性和方法。</p>
+
+<p>注意：继承分单继承和多继承，php支持的是单继承，一个子类只能有一个父类。</p>
+
+<p>好处：提高了代码的重用性。</p>
+
+<p>3）多态性：</p>
+
+<p>多态即多种形态，具有表现多种形态的能力特征。在面向对象中表示根据对象的类型以不同方式处理（说白了就是调用同一个方法可以获得不同的结果）。</p>
+
+<p>好处：增强了软件的灵活性。</p>
+
+<p>5.访问控制</p>
+
+<p>在属性或方法前面添加关键字 public（公有），protected（受保护）或 private（私有）来实现的。</p>
+
+<p>公有的类成员可以在任何地方被访问。</p>
+
+<p>受保护的类成员则可以被其自身以及其子类和父类访问。</p>
+
+<p>私有的类成员则只能被其定义所在的类访问。</p>
+
+<p>6.封装</p>
+
+<p>封装：将数据（属性）以及对数据的操作（方法）捆绑到一起，形成对外的数据隐藏。只对外提供可以调用的接口供其使用。（public的方法和属性）。</p>
+
+<p>封装的过程称之为抽象：将具有相同特性的一类事务，把公共的内容抽离出来，形成文字描述的过程。</p>
+
+<p>7.继承</p>
+
+<p>语法：</p>
+
+<p>父类：拥有一些可以被继承的属性和方法</p>
+
+<p>子类：想拥有自己不存在但是在别的类中存在的属性和方法</p>
+
+<p>关键字：extends</p>
+
+<p>子类 extends 父类</p>
+
+<p>继承的优点</p>
+
+<p>1)便于扩展（子类可以在父类的基础上增加自己的特点）</p>
+
+<p>2)节省代码：提高代码的复用性</p>
+
+<p>继承的细节</p>
+
+<p>①　子类最多只能继承一个父类（指直接继承）</p>
+
+<p>②　子类可以继承其父类的public,protected修饰的属性和方法。</p>
+
+<p>③　在创建某个子类对象时，默认情况下不会自动调用其父类的构造函数。</p>
+
+<p>④　如果在子类中需要访问父类中（以public/protected修饰）的方法，可以使用</p>
+
+<p>父类：：方法名或者是parent::方法名。</p>
+
+<p>如果子类（派生类）中的方法和父类（基类）方法相同，我们称之为方法重写/方</p>
+
+<p>继承：子类可以使用父类的属性和方法（除私有的）。</p>
+
+<p>8.多态</p>
+
+<p>多态：多种形态，在存在继承的情况下，子类必须重写父类的方法（子类拥有与父类同名的方法）</p>
+
+<p>9.使用$this访问方法和属性</p>
+
+<p>我们学习过，实例化对象后，可以通过对象名来调用类中的属性和方法。</p>
+
+<p>对象名-&gt;属性名</p>
+
+<p>对象名-&gt;方法名()</p>
+
+<p>类的内部如需调用本类的成员属性和成员方法，可借助伪变量$this。</p>
+
+<p>$this-&gt;属性名</p>
+
+<p>$this-&gt;方法名()</p>
+
+<p>原理：当一个对象($a)调用其方法(who())时，该方法执行之前，先完成一个绑定。就是$this绑定到调用该方法的那个对象上。</p>
+
+<p>10.self与$this的区别</p>
+
+<p>1)self ：代表本类，自身（不要理解为本类的对象），$this代表对象</p>
+
+<p>2)self访问类内部的常量和静态成员，$this访问对象的属性和普通方法</p>
+
+<p>3)self必须配合范围解析操作符（::）才能生效，$this代表对象，对象本来就是一种数据类型，所以$this可以单独被打印。</p>
+
+<p>4)能用$this的地方，一定可以使用self，但是能使用self的地方不一定可以使用$this</p>
+
+<p>5)非静态的属性和方法均用对象（$this）访问，静态的方法和属性或常量均用类(self)来访问</p>
+
 
 </div>
 
@@ -184,8 +274,8 @@ print_r($row);  	//这会是一个二维数组</p>
     
       <li>
         <h3>
-          <a href="/naringu/2015/02/21/three/">
-            面向对象!
+          <a href="/naringu/2015/02/21/one/">
+            php第一月总结!
             <small>21 Feb 2015</small>
           </a>
         </h3>
