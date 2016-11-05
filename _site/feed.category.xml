@@ -11,6 +11,18 @@
         <atom:link href="http://127.0.0.1feed.category.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>微信支付流程!</title>
+				
+					<description>&lt;p&gt;支付模式&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Thu, 12 Jun 2014 00:00:00 +0800</pubDate>
+				<link>http://127.0.0.1/naringu/2014/06/12/wei/</link>
+				<guid isPermaLink="true">http://127.0.0.1/naringu/2014/06/12/wei/</guid>
+			</item>
+		
+			<item>
 				<title>面向对象!</title>
 				
 					<description>&lt;p&gt;面向对象是一种计算机编程架构，比面向过程具有更强的灵活性和扩展性。&lt;/p&gt;
