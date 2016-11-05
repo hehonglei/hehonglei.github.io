@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      jquery的使用! &middot; 可了头i的博客
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/naringu.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/form.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="./public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="Mozilla RSS" href="feed.category.xml">
+  </head>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48740529-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<body class="theme-6dd">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+      <img width="125" height="125" alt="A photo of ariestiyansyah" src="/images/head.jpeg">
+    <p>oonlab is crafted with <3 by ariestiyansyah.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/categories/">Category Index</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/contact/">Contact</a>
+        
+      
+    
+      
+    
+
+    <a class="sidebar-nav-item" href="http://github.com">GitHub project</a>
+    <span class="sidebar-nav-item">Version 2.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2016. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">可了头i的博客</a>
+            <small>A GOOD MAN</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">jquery的使用!</h1>
+  <span class="post-date">12 Jun 2014</span>
+  <p>1.什么是jquery？</p>
+
+<p>一款免费且开放源代码的JavaScript代码库</p>
+
+<p>2.什么是JavaScript代码库</p>
+
+<p>Prototype框架（代码库），是成型比较早的Javascript代码库，面向对象的思想不完善且整个代码比较松散。</p>
+
+<p>Dojo框架，Dojo框架具有很多框架不具有的功能，比如离线存储等，其核心代码比较精简，但是其门槛较高且文档不全，版本不稳定。</p>
+
+<p>Mootools框架，整个框架核心代码只有8k，完整版也只有100多k，所以代码非常精简，对于面向对象的支持非常完善。</p>
+
+<p>ExtJS框架，通过Javascript可以编写富媒体，本身界面非常的美化，非常炫，但是其比较耗资源，而且其是收费的。</p>
+
+<p>jQuery框架（2006年，Javascript专家-美国人约翰特里），以其强大的DOM框架、Ajax封装等一些功能为所有程序员所推崇。</p>
+
+<p>3.基本选择器</p>
+
+<p>#id ：通过元素的id属性，匹配元素</p>
+
+<p>Element ：通过元素名称，匹配元素</p>
+
+<p>selector1,selector2 ：同时匹配多个选择器</p>
+
+<p>.class ：通过元素的class属性，匹配元素</p>
+
+<p>4.层次选择器</p>
+
+<p>ancetor descendant ：选取ancetor元素下的所有后代元素(所有父子孙元素…)</p>
+
+<p>parent &gt; child ：选取parent下的子元素(父子关系)</p>
+
+<p>prev + next ：选取prev元素的相邻的下一个元素（同级）</p>
+
+<p>prev~siblings ：选取prev元素的后面所有同级元素</p>
+
+<p>5.简单选择器</p>
+
+<p>:first ：选择第一个元素</p>
+
+<p>:last ：选取最后一个元素</p>
+
+<p>:even ：偶数  索引的值   索引从0开始</p>
+
+<p>:odd  ：奇数</p>
+
+<p>:eq(索引) ：选取索引为index的元素，默认从0开始</p>
+
+<p>:gt(index) ：选择索引大于index的元素，默认从0开始</p>
+
+<p>:lt(index) ：选取索引小于index的元素，默认从0开始</p>
+
+<p>:not(selector) ：选择选择器不为selector的元素</p>
+
+<p>6.内容选择器</p>
+
+<p>:contains(text) ：匹配元素内容包含text文本的元素</p>
+
+<p>:empty ：匹配元素内容为空的元素</p>
+
+<p>:has(selector) ：匹配具有元素的元素</p>
+
+<p>:parent ：匹配内容不为空的元素</p>
+
+<p>7.可见性选择器</p>
+
+<p>:hidden ：匹配所有隐藏元素（display:none与type=hidden）</p>
+
+<p>:visible ：匹配所有可见元素</p>
+
+<p>8.属性选择器</p>
+
+<p>[attribute] ：匹配具有某一属性的元素</p>
+
+<p>[attribute=value] ：匹配属性值等于value的元素</p>
+
+<p>[attribute!=value] ：匹配属性值不等于value的元素</p>
+
+<p>[attribute^=value] ：匹配属性值以value开始的元素</p>
+
+<p>[attribute$=value] ：匹配属性值以value结尾的元素</p>
+
+<p>[attribute*=value] ：匹配属性值包含value的元素</p>
+
+<p>[selector1][selector2][selectorN] ：匹配具有多个指定属性的元素</p>
+
+<p>9.子元素选择器</p>
+
+<p>nth-child(index/even/odd) 从1算起 ：匹配满足条件（索引，偶数，奇数）子元素</p>
+
+<p>:first-child ：选取第一个子元素</p>
+
+<p>:last-child ：选取最后一个子元素</p>
+
+<p>:only-child ：选取子元素且该子元素是唯一的子元素，则匹配</p>
+
+<p>10.表单选择器</p>
+
+<p>:input ：匹配所有表单元素（包含select、textarea）</p>
+
+<p>:text 	：匹配所有text文本框</p>
+
+<p>:password ：匹配所有密码框</p>
+
+<p>:radio	：匹配所有单选</p>
+
+<p>:checkbox ：匹配所有复选框</p>
+
+<p>:submit ：匹配所有提交按钮</p>
+
+<p>:reset ：匹配所有重置按钮</p>
+
+<p>:image ：匹配所有图像域</p>
+
+<p>:button ：匹配所有button按钮（type=’button’或button标签）</p>
+
+<p>:file ：匹配所有文件域</p>
+
+<p>:hidden ：匹配所有隐藏表单</p>
+
+<p>11.表单对象属性选择器</p>
+
+<p>:enabled ：选取所有可用表单</p>
+
+<p>:disabled ：选取所有不可用表单</p>
+
+<p>:checked ：选取所有选中的表单元素（单选框与复选框）</p>
+
+<p>:selected ：选取被选中的下拉选框（下拉）</p>
+
+<p>12.属性</p>
+
+<p>attr(name) ：获取元素的属性值</p>
+
+<p>attr(key,value) ：设置元素的属性的值</p>
+
+<p>attr(properties) ：一次为元素设置多个属性，要求参数是一个json对象</p>
+
+<p>attr(key,fn) ：通过函数的返回值设置元素的属性</p>
+
+<p>removeAttr(name) ：移除元素的属性</p>
+
+<p>13.class操作</p>
+
+<p>addClass(class) ：为元素添加class样式</p>
+
+<p>removeClass(class) ：为元素移除class样式</p>
+
+<p>toggleClass(class) ：切换样式，当元素拥有class样式则移除，否则，即添加</p>
+
+<p>hasClass(class) ：判断当前元素是否具有class样式</p>
+
+<p>14.html/text/val</p>
+
+<p>html() ：获取元素的值（主要针对的是双标签元素）</p>
+
+<p>html(val) ：设置元素的值</p>
+
+<p>val() ：获取表单元素的value值（主要针对的是表单元素）</p>
+
+<p>val(val) ：设置表单元素的value值</p>
+
+<p>text() ：获取元素的值</p>
+
+<p>text(val) ：设置元素的值</p>
+
+<p>说明：
+html()与text()方法区别
+在获取时，如果是普通文本信息，两者效果一致，如元素中包含子元素，那么html方法可以获取到所有的子元素及文本信息，而text()方法只能获取文本信息。
+在设置时，如果是普通文本信息，两者效果一致，如果设置的值中包含标签，那么html方法可以进行解析执行，而text方法不能解析html代码，会当做普通文本处理。</p>
+
+<p>15.css操作</p>
+
+<p>css(name) ：获取元素的css的值</p>
+
+<p>css(name,value) ：设置元素的css的值</p>
+
+<p>css(properties) ：一次为元素设置多个css的值，要求参数为json对象</p>
+
+<p>16.尺寸操作</p>
+
+<p>width() ：获取元素的宽度</p>
+
+<p>width(value) ：设置元素的宽度</p>
+
+<p>height() ：获取元素的高度</p>
+
+<p>height(value) ：设置元素的高度</p>
+
+<p>17.基本事件</p>
+
+<p>blur(fn) ：当失去焦点时触发</p>
+
+<p>change(fn) ：当状态改变时触发</p>
+
+<p>click(fn) ：单击时触发</p>
+
+<p>dblclick(fn) ：双击时触发</p>
+
+<p>focus(fn) ：获取焦点时触发</p>
+
+<p>keydown(fn) ：键盘按下时触发</p>
+
+<p>keyup(fn) ：键盘弹起时触发</p>
+
+<p>keypress(fn) ：键盘按下时触发</p>
+
+<p>load(fn) ：页面载入时触发</p>
+
+<p>unload(fn) ：页面卸载（关闭）时触发</p>
+
+<p>mousedown(fn) ：鼠标按下时触发</p>
+
+<p>mouseup(fn) ：鼠标弹起时触发</p>
+
+<p>mousemove(fn) ：鼠标移动时触发</p>
+
+<p>mouseover(fn) ：鼠标悬浮时触发</p>
+
+<p>mouseout(fn) ：鼠标离开时触发</p>
+
+<p>resize(fn) ：大小改变时触发</p>
+
+<p>scroll(fn) ：滚动时触发</p>
+
+<p>select(fn) ：选中时触发</p>
+
+<p>submit(fn) ：表单提交时触发</p>
+
+<p>18.事件切换</p>
+
+<p>hover(over,out) ：鼠标悬浮与鼠标离开事件，第一个参数为over事件处理程序，第二个参数为out事件处理程序</p>
+
+<p>toggle(fn,fn) ：点击事件切换，可以有多个参数</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/naringu/2014/06/12/three/">
+            面向对象!
+            <small>12 Jun 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/naringu/2014/06/12/four/">
+            linux的使用!
+            <small>12 Jun 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/naringu/2014/04/09/two/">
+            javascript!
+            <small>09 Apr 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<div class="comments">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'testnaringu';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'testnaringu';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+
+    <div align="center" class="footer">
+        <a href="https://github.com/ariestiyansyah/naringu" target="_blank" title="naringu">Naringu</a>  is designed by Rizky Ariestiyansyah<br />Copyright © 2016 <br>
+    </div>
+  </body>
+</html>
+
