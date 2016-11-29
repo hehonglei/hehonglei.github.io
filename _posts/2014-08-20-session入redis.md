@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "session入redis"
-date:   2009-01-20 22:14:54
 categories: session
 tags: redis
 excerpt: session入redis 
